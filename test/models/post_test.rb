@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class PostTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "fixtures make it to the database" do
+    assert Post.count == 2
+  end
 end
